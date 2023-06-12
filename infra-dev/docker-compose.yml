@@ -1,0 +1,8 @@
+version: "3"
+services:
+  server:
+    build: ./server
+    volumes:
+      - ../:/usr/src/starcoder-server
+    tty: true
+    working_dir: /usr/src/starcoder-server
